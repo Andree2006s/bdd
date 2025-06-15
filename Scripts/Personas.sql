@@ -1,4 +1,3 @@
---crear tabla personas
 create table personas(
 	cedula char(10) not null,
 	nombre varchar(50) not null,
@@ -25,3 +24,6 @@ values ('1714616126','Neyber','Condor',1.59,'11/07/2000','22:34',200.34,3);
 select cedula,nombre,apellido from personas
 
 select * from personas
+update personas set estatura =1.70 where cedula ='1714616125'
+update personas set cantidad_ahorrada=0
+update personas set numero_hijos=0 where numero_hijos is null
